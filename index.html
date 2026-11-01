@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DM Khaiwal - Satta Result Today, Satta King, Satka Matka Result, Desawar, Gali, Faridabad</title>
+
+  <!-- SEO Meta Tags for Satta Results, King, Matka and Brand -->
+  <meta name="description" content="DM Khaiwal provides fast Satta Result Today, Aaj Satta Ka Result, Satta King, Satka Matka Today Result, and game timings for Faridabad, Ghaziabad, Gali, Desawar, Kalyan Matka. Join Telegram & WhatsApp.">
+  <meta name="keywords" content="satta result, satta result today, satta today, aaj satta ka result, satka matka, satka matka today result, satta king, dm khaiwal, dm satta result, dm satta, faridabad satta, ghaziabad satta, gali result, desawar timing, kalyan matka chart">
+  <meta name="author" content="DM Khaiwal">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', 'Arial Black', sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at center, #ffe600 0%, #ff9100 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+    }
+
+    /* Main Poster Card */
+    .poster-card {
+      background: linear-gradient(180deg, #fff266 0%, #ffd600 100%);
+      border: 3.5px dashed #d90429;
+      border-radius: 28px;
+      max-width: 460px;
+      width: 100%;
+      padding: 22px 14px;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35), inset 0 0 15px rgba(255, 255, 255, 0.6);
+      text-align: center;
+      position: relative;
+    }
+
+    /* Top Heading */
+    .top-subhead {
+      font-size: 17px;
+      font-weight: 900;
+      color: #b7094c;
+      text-shadow: 1px 1px 0px #fff;
+      margin-bottom: 4px;
+    }
+
+    .main-brand {
+      font-size: 25px;
+      font-weight: 900;
+      color: #000000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      text-shadow: 0 1px 2px rgba(255,255,255,0.8);
+    }
+
+    .crown-icon {
+      color: #d90429;
+      font-size: 24px;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+    }
+
+    /* Regular Timing List */
+    .timing-list {
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 16px;
+      padding: 10px 12px;
+      box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+
+    .timing-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 15px;
+      font-weight: 900;
+      color: #111;
+      border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+      padding-bottom: 3px;
+    }
+
+    .timing-row:last-child {
+      border-bottom: none;
+    }
+
+    .bazar-name {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+
+    .dash-line {
+      flex-grow: 1;
+      margin: 0 6px;
+      border-bottom: 2.5px dashed #333;
+      height: 2px;
+      opacity: 0.6;
+    }
+
+    .time-val {
+      font-size: 15px;
+      font-weight: 900;
+      color: #9d0208;
+      white-space: nowrap;
+    }
+
+    /* Highlighted Matka Table Section */
+    .matka-section {
+      margin: 18px 0;
+      background: #004b23;
+      border: 3px solid #ffea00;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .matka-header-banner {
+      background: linear-gradient(180deg, #007200 0%, #004b23 100%);
+      color: #ffea00;
+      padding: 10px 8px;
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border-bottom: 3px solid #ffea00;
+      text-shadow: 1px 2px 3px rgba(0,0,0,0.6);
+    }
+
+    .table-container {
+      max-height: 380px;
+      overflow-y: auto;
+      background: #ffffff;
+    }
+
+    .matka-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    .matka-table thead th {
+      background: #ffea00;
+      color: #000;
+      padding: 8px 4px;
+      border: 1.5px solid #0029ff;
+      font-size: 12.5px;
+      font-weight: 900;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+
+    .matka-table td {
+      padding: 7px 3px;
+      border: 1.5px solid #0029ff;
+      color: #000;
+      font-weight: 900;
+    }
+
+    .matka-table tbody tr:nth-child(even) {
+      background-color: #fff9db;
+    }
+
+    .matka-table tbody tr:hover {
+      background-color: #ffd166;
+    }
+
+    .m-name {
+      text-align: left;
+      padding-left: 6px !important;
+      color: #0b090a;
+    }
+
+    .m-days {
+      color: #00509d;
+    }
+
+    .m-open {
+      color: #007200;
+    }
+
+    .m-close {
+      color: #d90429;
+    }
+
+    /* Bottom Notice */
+    .telegram-notice {
+      background: #000;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 900;
+      border-radius: 8px;
+      padding: 7px 10px;
+      margin: 10px 0 14px 0;
+      line-height: 1.4;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .telegram-notice span {
+      color: #ffea00;
+    }
+
+    /* Buttons */
+    .action-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+
+    @keyframes pulse-bounce {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(0, 136, 204, 0.7);
+      }
+      50% {
+        transform: scale(1.04);
+        box-shadow: 0 0 25px rgba(0, 136, 204, 1);
+      }
+    }
+
+    @keyframes pulse-bounce-green {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 12px rgba(37, 211, 102, 0.6);
+      }
+      50% {
+        transform: scale(1.03);
+        box-shadow: 0 0 22px rgba(37, 211, 102, 0.9);
+      }
+    }
+
+    .btn-contact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      border: 2.5px solid #ffffff;
+      border-radius: 50px;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    .telegram-btn {
+      background: linear-gradient(135deg, #0088cc 0%, #005f8f 100%);
+      animation: pulse-bounce 1.4s infinite;
+    }
+
+    .whatsapp-btn {
+      background: linear-gradient(135deg, #25D366 0%, #178a42 100%);
+      animation: pulse-bounce-green 1.7s infinite;
+    }
+
+    .btn-icon-circle {
+      background: #ffffff;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    .telegram-btn .btn-icon-circle { color: #0088cc; }
+    .whatsapp-btn .btn-icon-circle { color: #25D366; }
+
+    .btn-text-box {
+      text-align: left;
+      line-height: 1.15;
+    }
+
+    .btn-text-title {
+      font-size: 16px;
+      font-weight: 900;
+      display: block;
+    }
+
+    .btn-text-sub {
+      font-size: 11px;
+      font-weight: 700;
+      color: #f1f1f1;
+    }
+
+    /* Modal Backdrop */
+    .modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      z-index: 9999;
+      backdrop-filter: blur(4px);
+    }
+
+    .modal-box {
+      background: linear-gradient(180deg, #fff266 0%, #ffc300 100%);
+      border: 3.5px solid #d90429;
+      border-radius: 24px;
+      padding: 22px 16px;
+      max-width: 330px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 0 35px rgba(255, 235, 59, 0.9);
+    }
+
+    .close-btn {
+      position: absolute;
+      top: -12px;
+      right: -12px;
+      width: 32px;
+      height: 32px;
+      background: #d90429;
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: 900;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main Card -->
+  <div class="poster-card">
+    <div class="top-subhead">सीधे सट्टा कंपनी का No 1 खाईवाल--</div>
+    
+    <div class="main-brand">
+      <i class="fa-solid fa-crown crown-icon"></i>
+      <span>DM KHAIWAL</span>
+      <i class="fa-solid fa-crown crown-icon"></i>
+    </div>
+
+    <!-- Regular Market Timings -->
+    <div class="timing-list">
+      <div class="timing-row"><span class="bazar-name">⏰ सदर बाजार</span><span class="dash-line"></span><span class="time-val">1:20 pm</span></div>
+      <div class="timing-row"><span class="bazar-name">⏰ ग्वालियर</span><span class="dash-line"></span><span class="time-val">2:20 pm</span></div>
+      <div class="timing-row"><span class="bazar-name">⏰ दिल्ली बाजार</span><span class="dash-line"></span><span class="time-val">2:50 pm</span></div>
+      <div class="timing-row"><span class="bazar-name">⏰ दिल्ली मटका</span><span class="dash-line"></span><span class="time-val">3:20 Pm</span></div>
+      <div class="timing-row"><span class="bazar-name">⏰ श्री गणेश</span><span class="dash-line"></span><span class="time-val">4:20 pm</span></div>
+      <div class="timing-row"><span class="bazar-name">⏰ आगरा</span><span class="dash-line"></span><span class="time-val">5:20 pm</span></div>
+      <div class="timing-row"><span class="bazar-name">⏰ फरीदाबाद</span><span class="dash-line"></span><span class="time-val">5:30 pm</span></div>
+      <div class="timing-row"><span class="bazar-name">⏰ अलवर</span><span class="dash-line"></span><span class="time-val">7:20 pm</span></div>
+      <div class="timing-row"><span class="bazar-name">⏰ गाज़ियाबाद</span><span class="dash-line"></span><span class="time-val">9:30 pm</span></div>
+      <div class="timing-row"><span class="bazar-name">⏰ द्वारका</span><span class="dash-line"></span><span class="time-val">10:30 pm</span></div>
+      <div class="timing-row"><span class="bazar-name">⏰ गली</span><span class="dash-line"></span><span class="time-val">11:30 pm</span></div>
+      <div class="timing-row"><span class="bazar-name">⏰ दिसावर</span><span class="dash-line"></span><span class="time-val">1:30 Am</span></div>
+    </div>
+
+    <!-- SATTA MATKA TIME TABLE (HIGHLIGHTED & BOLD) -->
+    <div class="matka-section">
+      <div class="matka-header-banner">
+        <span>➥</span> SATTA MATKA TIME TABLE <span>➥</span>
+      </div>
+      <div class="table-container">
+        <table class="matka-table">
+          <thead>
+            <tr>
+              <th>MARKET NAME</th>
+              <th>DAYS</th>
+              <th>OPEN</th>
+              <th>CLOSE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="m-name">MADHURI</td><td class="m-days">Daily</td><td class="m-open">11:30 AM</td><td class="m-close">12:30 PM</td></tr>
+            <tr><td class="m-name">MADHUR MORNING</td><td class="m-days">Daily</td><td class="m-open">11:30 AM</td><td class="m-close">12:30 PM</td></tr>
+            <tr><td class="m-name">SRIDEVI</td><td class="m-days">Daily</td><td class="m-open">11:30 AM</td><td class="m-close">12:30 PM</td></tr>
+            <tr><td class="m-name">SUPER BAZAR</td><td class="m-days">Daily</td><td class="m-open">12:30 PM</td><td class="m-close">01:30 PM</td></tr>
+            <tr><td class="m-name">TIME BAZAR</td><td class="m-days">Daily</td><td class="m-open">01:00 PM</td><td class="m-close">02:00 PM</td></tr>
+            <tr><td class="m-name">PUNJAB STAR</td><td class="m-days">Daily</td><td class="m-open">12:30 PM</td><td class="m-close">01:30 PM</td></tr>
+            <tr><td class="m-name">MAHALAXMI DAY</td><td class="m-days">Daily</td><td class="m-open">01:00 PM</td><td class="m-close">02:00 PM</td></tr>
+            <tr><td class="m-name">MADHUR DAY</td><td class="m-days">Daily</td><td class="m-open">01:30 PM</td><td class="m-close">02:30 PM</td></tr>
+            <tr><td class="m-name">JAIPUR DAY</td><td class="m-days">Daily</td><td class="m-open">02:30 PM</td><td class="m-close">04:30 PM</td></tr>
+            <tr><td class="m-name">MILAN DAY</td><td class="m-days">Daily</td><td class="m-open">03:00 PM</td><td class="m-close">05:00 PM</td></tr>
+            <tr><td class="m-name">RAJKOT DAY</td><td class="m-days">Daily</td><td class="m-open">02:30 PM</td><td class="m-close">04:30 PM</td></tr>
+            <tr><td class="m-name">KASHIPUR DAY</td><td class="m-days">Mon-Sat</td><td class="m-open">02:30 PM</td><td class="m-close">04:30 PM</td></tr>
+            <tr><td class="m-name">RAJDHANI DAY</td><td class="m-days">Mon-Sat</td><td class="m-open">03:40 PM</td><td class="m-close">05:40 PM</td></tr>
+            <tr><td class="m-name">KANPUR DAY</td><td class="m-days">Mon-Sat</td><td class="m-open">03:30 PM</td><td class="m-close">05:30 PM</td></tr>
+            <tr><td class="m-name">KALYAN</td><td class="m-days">Mon-Sat</td><td class="m-open">03:45 PM</td><td class="m-close">05:45 PM</td></tr>
+            <tr><td class="m-name">GUJARAT DAY</td><td class="m-days">Mon-Sat</td><td class="m-open">03:30 PM</td><td class="m-close">05:30 PM</td></tr>
+            <tr><td class="m-name">AGRA DAY</td><td class="m-days">Mon-Sat</td><td class="m-open">03:40 PM</td><td class="m-close">05:40 PM</td></tr>
+            <tr><td class="m-name">SRIDEVI NIGHT</td><td class="m-days">Daily</td><td class="m-open">07:15 PM</td><td class="m-close">08:15 PM</td></tr>
+            <tr><td class="m-name">MAHALAXMI NIGHT</td><td class="m-days">Mon-Sat</td><td class="m-open">08:00 PM</td><td class="m-close">10:00 PM</td></tr>
+            <tr><td class="m-name">MADHUR NIGHT</td><td class="m-days">Mon-Sat</td><td class="m-open">08:30 PM</td><td class="m-close">10:30 PM</td></tr>
+            <tr><td class="m-name">GORAKHPUR NIGHT</td><td class="m-days">Mon-Sat</td><td class="m-open">08:00 PM</td><td class="m-close">10:00 PM</td></tr>
+            <tr><td class="m-name">JAIPUR NIGHT</td><td class="m-days">Mon-Sat</td><td class="m-open">08:30 PM</td><td class="m-close">10:30 PM</td></tr>
+            <tr><td class="m-name">MILAN NIGHT</td><td class="m-days">Mon-Sat</td><td class="m-open">09:00 PM</td><td class="m-close">11:00 PM</td></tr>
+            <tr><td class="m-name">RAJKOT NIGHT</td><td class="m-days">Mon-Sat</td><td class="m-open">08:30 PM</td><td class="m-close">10:30 PM</td></tr>
+            <tr><td class="m-name">KASHIPUR NIGHT</td><td class="m-days">Mon-Fri</td><td class="m-open">08:40 PM</td><td class="m-close">10:40 PM</td></tr>
+            <tr><td class="m-name">RAJDHANI NIGHT</td><td class="m-days">Mon-Fri</td><td class="m-open">09:30 PM</td><td class="m-close">11:45 PM</td></tr>
+            <tr><td class="m-name">KANPUR NIGHT</td><td class="m-days">Mon-Fri</td><td class="m-open">09:00 PM</td><td class="m-close">11:00 PM</td></tr>
+            <tr><td class="m-name">KALYAN NIGHT</td><td class="m-days">Mon-Fri</td><td class="m-open">09:15 PM</td><td class="m-close">11:30 PM</td></tr>
+            <tr><td class="m-name">GUJARAT NIGHT</td><td class="m-days">Mon-Fri</td><td class="m-open">09:00 PM</td><td class="m-close">11:00 PM</td></tr>
+            <tr><td class="m-name">AGRA NIGHT</td><td class="m-days">Mon-Fri</td><td class="m-open">09:00 PM</td><td class="m-close">11:00 PM</td></tr>
+            <tr><td class="m-name">AKOLA BAZAR</td><td class="m-days">Mon-Fri</td><td class="m-open">09:10 PM</td><td class="m-close">11:10 PM</td></tr>
+            <tr><td class="m-name">MAIN BAZAR</td><td class="m-days">Mon-Fri</td><td class="m-open">09:35 PM</td><td class="m-close">12:05 AM</td></tr>
+            <tr><td class="m-name">NEW KANPUR</td><td class="m-days">Mon-Fri</td><td class="m-open">09:00 PM</td><td class="m-close">11:00 PM</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Notice Box -->
+    <div class="telegram-notice">
+      🎯 <span>Satta Result Today & Satka Matka Updates</span> के लिए अभी जुड़े!
+    </div>
+
+    <!-- Buttons -->
+    <div class="action-buttons">
+      <a href="https://t.me/+6gB8owbUVc8zNzk9" target="_blank" class="btn-contact telegram-btn">
+        <div class="btn-icon-circle"><i class="fa-brands fa-telegram"></i></div>
+        <div class="btn-text-box">
+          <span class="btn-text-title">Telegram Join Karein</span>
+          <span class="btn-text-sub">सटीक जोड़ी & पैनल जानकारी</span>
+        </div>
+      </a>
+
+      <a href="https://wa.me/919887101290?text=How%20I%27m%20play%20game" target="_blank" class="btn-contact whatsapp-btn">
+        <div class="btn-icon-circle"><i class="fa-brands fa-whatsapp"></i></div>
+        <div class="btn-text-box">
+          <span class="btn-text-title">WhatsApp Chat</span>
+          <span class="btn-text-sub">Game Play करने के लिए</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Auto Pop-up Modal -->
+  <div id="modalBox" class="modal-backdrop">
+    <div class="modal-box">
+      <button class="close-btn" onclick="closeModal()">✕</button>
+      <div style="font-size: 26px; margin-bottom: 4px;">👑</div>
+      <div style="font-size: 22px; font-weight: 900; color: #000; margin-bottom: 2px;">DM KHAIWAL</div>
+      <div style="font-size: 13px; font-weight: 800; color: #d90429; margin-bottom: 14px;">सटीक जोड़ी और पैनल के लिए जुड़ें</div>
+      
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <a href="https://t.me/+6gB8owbUVc8zNzk9" target="_blank" class="btn-contact telegram-btn" style="padding: 10px 14px;">
+          <div class="btn-icon-circle" style="width: 36px; height: 36px; font-size: 20px;"><i class="fa-brands fa-telegram"></i></div>
+          <div class="btn-text-box">
+            <span class="btn-text-title" style="font-size: 15px;">Telegram Channel</span>
+            <span class="btn-text-sub">रोज़ाना पक्की जोड़ी</span>
+          </div>
+        </a>
+
+        <a href="https://wa.me/919887101290?text=How%20I%27m%20play%20game" target="_blank" class="btn-contact whatsapp-btn" style="padding: 10px 14px;">
+          <div class="btn-icon-circle" style="width: 36px; height: 36px; font-size: 20px;"><i class="fa-brands fa-whatsapp"></i></div>
+          <div class="btn-text-box">
+            <span class="btn-text-title" style="font-size: 15px;">WhatsApp Chat</span>
+            <span class="btn-text-sub">Game Play</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        const modal = document.getElementById('modalBox');
+        if (modal) modal.style.display = 'flex';
+      }, 1200);
+    });
+
+    function closeModal() {
+      const modal = document.getElementById('modalBox');
+      if (modal) modal.style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
